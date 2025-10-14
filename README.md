@@ -26,8 +26,7 @@ Hearoo can:
 - **Upload or use sample audio files** from the ESC-50 dataset.  
 - **Interactive ResNet feature maps** display how each convolutional layer reacts to sounds.  
 - **Top-3 predictions** with confidence scores for easy interpretation.  
-- **Waveform and spectrogram visualization** to understand audio patterns.  
-- **Responsive design** with Tailwind CSS — works on desktop and mobile.  
+- **Waveform and spectrogram visualization** to understand audio patterns.   
 - **Credits warning system** to remind users about Modal.com usage limits (customizable).  
 
 ---
@@ -73,9 +72,3 @@ All results are displayed in real-time, making audio exploration seamless and vi
 - Future updates may include **authentication** so only authorized users can analyze audio.  
 ---
 
-## 💻 Running Locally
-
-1. Clone the repository:  
-```bash
-git clone https://github.com/your-username/hearoo.git
-cd hearoo/frontend
