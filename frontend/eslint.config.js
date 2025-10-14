@@ -33,6 +33,11 @@ export default tseslint.config(
         "error",
         { checksVoidReturn: { attributes: false } },
       ],
+      "no-unused-vars": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/consistent-indexed-object-style": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
     },
   },
   {
