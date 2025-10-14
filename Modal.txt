@@ -1,0 +1,2 @@
+3.78
+https://mahadsid--audio-cnn-inference-audioclassifier-inference.modal.run/
