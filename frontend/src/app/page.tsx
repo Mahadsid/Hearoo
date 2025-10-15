@@ -378,7 +378,7 @@ export default function HomePage() {
                 className="relative w-full max-w-6xl overflow-hidden rounded-2xl shadow-lg"
               >
                 <Image
-                  src={`/images/${img}`}
+                  src={`/demo/${img}`}
                   alt={`Demo ${idx + 1}`}
                   width={1600}
                   height={900}
