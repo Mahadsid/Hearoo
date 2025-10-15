@@ -11,6 +11,7 @@ import { Progress } from "~/components/ui/progress";
 import Waveform from "~/components/Waveform";
 import SampleInference from "./SamplesButton";
 import { toast } from "react-hot-toast";
+import Image from "next/image";
 
 interface Prediction {
   class: string;
@@ -202,8 +203,11 @@ export default function HomePage() {
           with an impressive <span className="font-medium text-green-700">81.25% accuracy</span>. 
           Watch as it transforms your WAV files into visual feature maps that bring sound to life.
           </p>
-          <a href="#" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-300" target="_blank">{new Date().getFullYear()} Certified · Created with ❤️ by <span className="font-medium">Muhammad Mahad</span>
+          <a href="https://mahadsid.github.io/portfolio/" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-300" target="_blank">{new Date().getFullYear()} Certified · Created with ❤️ by <span className="font-medium">Muhammad Mahad</span>
           </a>
+          <div>
+            <a href="https://mahadsid.github.io/portfolio/" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-300" target="_blank">Portfolio-Muhammad Mahad</a>
+          </div>
           <p className="text-md mb-8 text-stone-600 pt-3">
           Upload a WAV file and let <span className="font-medium text-stone-800">Hearoo</span> work its magic — 
           uncover predictions powered by deep learning and explore stunning <span className="font-medium">ResNet feature maps </span> 
@@ -360,6 +364,33 @@ export default function HomePage() {
           </div>
         )}
       </div>
+      {/* --- Add this section below all content --- */}
+      <section className="w-full mt-32 mb-12">
+        <h2 className="text-2xl font-semibold text-center text-stone-800 mb-6">
+          👀 See Hearoo in Action - Screenshots of results for Can-Opening.wav
+        </h2>
+
+        <div className="flex flex-col items-center space-y-8 px-4">
+          {["sample2.png", "sample3.png"].map(
+            (img, idx) => (
+              <div
+                key={idx}
+                className="relative w-full max-w-6xl overflow-hidden rounded-2xl shadow-lg"
+              >
+                <Image
+                  src={`/images/${img}`}
+                  alt={`Demo ${idx + 1}`}
+                  width={1600}
+                  height={900}
+                  className="object-fit w-full h-[60vh] md:h-[70vh] lg:h-[75vh]"
+                />
+              </div>
+            )
+          )}
+        </div>
+      </section>
+      <a href="https://mahadsid.github.io/portfolio/" className="text-stone-500 hover:text-stone-800 text-sm transition-colors duration-300" target="_blank">{new Date().getFullYear()} Certified · Created with ❤️ by <span className="font-medium">Muhammad Mahad</span>
+          </a>
     </main>
   );
 }
