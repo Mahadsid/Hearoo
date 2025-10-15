@@ -371,7 +371,7 @@ export default function HomePage() {
         </h2>
 
         <div className="flex flex-col items-center space-y-8 px-4">
-          {["sample2.png", "sample3.png"].map(
+          {["sample2.PNG", "sample3.PNG"].map(
             (img, idx) => (
               <div
                 key={idx}
